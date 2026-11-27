@@ -1,9 +1,11 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import GameHeader from "@/components/GameHeader.vue";
+import ClickerPanel from "@/components/ClickerPanel.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <GameHeader/>
+    <ClickerPanel/>
   </main>
 </template>

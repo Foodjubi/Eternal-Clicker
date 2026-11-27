@@ -1,35 +1,19 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #110e16;
+  color: #e7ddeb;
+  font-family: Arial, sans-serif;
 }
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+main { max-width: 700px; margin: auto; padding: 16px; }
+.panel {
+  display: grid; gap: 16px; text-align: center;
+  padding: 32px; border: 1px solid #493747;
+  border-radius: 12px; background: #211b29;
 }
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.panel strong { color: #d4b77a; font-size: 40px; }
+button {
+  padding: 12px; border: 0; border-radius: 6px;
+  background: #d4b77a; color: #110e16; cursor: pointer;
 }
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
+button:hover { background: #e7cf9f; }
